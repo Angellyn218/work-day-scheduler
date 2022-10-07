@@ -39,7 +39,6 @@ $(document).ready(function() {
     // Sets value of textarea to scheduled events
     scheduledEls.each(function(i, val) {
         $(this).val(scheduled[i]);
-        console.log(scheduled[i]);
     });
 
     // Sets color of section
