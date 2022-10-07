@@ -7,7 +7,10 @@ $(document).ready(function() {
 
     // initialize website
     var init = function() {
-        scheduled = JSON.parse(localStorage.getItem('scheduled'));
+        var localStorageScheduled = JSON.parse(localStorage.getItem('scheduled'));
+        if (scoresLocalStorage !== null) {
+            scores = scoresLocalStorage;
+        }
     }
 
     // Updates day and time on scheduler 
