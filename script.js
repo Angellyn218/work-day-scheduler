@@ -8,8 +8,8 @@ $(document).ready(function() {
     // initialize website
     var init = function() {
         var localStorageScheduled = JSON.parse(localStorage.getItem('scheduled'));
-        if (scoresLocalStorage !== null) {
-            scores = scoresLocalStorage;
+        if (localStorageScheduled !== null) {
+            scheduled = localStorageScheduled;
         }
     }
 
